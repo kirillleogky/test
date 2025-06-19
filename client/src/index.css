@@ -1,0 +1,57 @@
+#root {
+  width: 100%;
+}
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  background: #f5f7fa;
+  font-family: 'Inter', sans-serif;
+  min-height: 100vh;
+}
+
+:root {
+  --color-primary: #0e9cf1;
+  --color-primary-light: #a0cfff;
+  --color-white:      #ffffff;
+  --color-black:      #000000;
+  --color-text:       #292828;
+  --color-text-muted: #555555;
+  --color-border:     #e1e6eb;
+  --color-border-dark:#444444;
+  --color-error:      #dc3545;
+
+  --radius-sm: 8px;
+  --radius-md:12px;
+  --radius-lg:16px;
+
+  --space-xs:4px;
+  --space-sm:8px;
+  --space-md:16px;
+  --space-lg:24px;
+  --space-xl:60px;
+
+  --fs-sm:14px;
+  --fs-md:16px;
+  --fs-lg:20px;
+  --fs-xl:24px;
+  --fs-2xl:32px;
+
+  --shadow-sm: 0 4px 12px rgba(0,127,255,0.3);
+  --shadow-md: 0 8px 24px rgba(0,0,0,0.05);
+  --shadow-lg: 0 12px 32px rgba(0,0,0,0.08);
+}

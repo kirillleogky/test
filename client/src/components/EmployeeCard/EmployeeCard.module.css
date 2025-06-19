@@ -1,0 +1,93 @@
+.card {
+    background: var(--color-white);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+}
+
+.content {
+    display: flex;
+    padding: var(--space-lg);
+    gap: var(--space-lg);
+    align-items: center;
+}
+
+.avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.info {
+    flex: 1;
+}
+
+.name {
+    font-size: var(--fs-xl);
+    margin: 0 0 var(--space-md);
+    color: var(--color-text);
+}
+
+.statusRow {
+    display: flex;
+}
+
+.statusContent {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-sm);
+    border-bottom: 1px solid var(--color-border);
+    padding-bottom: var(--space-xs);
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.selectWrapper {
+    position: relative;
+    width: fit-content;
+}
+
+.selectWrapper::after {
+    content: '▾';
+    position: absolute;
+    top: 50%;
+    right: var(--space-sm);
+    transform: translateY(-50%);
+    color: var(--color-text-muted);
+    pointer-events: none;
+}
+
+.select {
+    appearance: none;
+    border: none;
+    background: transparent;
+    font-size: var(--fs-md);
+    padding: 4px 28px 4px 0;
+    color: var(--color-text-muted);
+    cursor: pointer;
+}
+
+.apply {
+    background: var(--color-primary);
+    color: var(--color-white);
+    border: none;
+    border-bottom-left-radius: var(--radius-lg);
+    border-bottom-right-radius: var(--radius-lg);
+    padding: var(--space-sm);
+    font-size: var(--fs-md);
+    font-weight: 600;
+    cursor: pointer;
+}
